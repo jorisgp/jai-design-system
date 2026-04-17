@@ -2,7 +2,10 @@
   "name": "@jai-design-system/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:components": "nx build jai-components",
+    "pack:components": "npm pack dist/libs/jai-design-system-components"
+  },
   "private": true,
   "pnpm": {
     "overrides": {
