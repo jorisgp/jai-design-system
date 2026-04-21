@@ -3,6 +3,14 @@
   "version": "0.0.1",
   "description": "Agent J Design System ",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorisgp/agentj-design-system"
+  },
+  "bugs": {
+    "url": "https://github.com/jorisgp/agentj-design-system/issues"
+  },
+  "homepage": "https://github.com/jorisgp/agentj-design-system",
   "peerDependencies": {
     "@angular/common": "^21.1.0",
     "@angular/core": "^21.1.0",

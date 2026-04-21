@@ -70,6 +70,13 @@ jobs:
         run: |
           npm pkg set version="${{ steps.bump.outputs.next_version }}" --prefix dist/libs/agentj-design-system-components
 
+      - name: Set repository metadata for provenance
+        run: |
+          npm pkg set repository.type="git" --prefix dist/libs/agentj-design-system-components
+          npm pkg set repository.url="https://github.com/jorisgp/agentj-design-system" --prefix dist/libs/agentj-design-system-components
+          npm pkg set bugs.url="https://github.com/jorisgp/agentj-design-system/issues" --prefix dist/libs/agentj-design-system-components
+          npm pkg set homepage="https://github.com/jorisgp/agentj-design-system" --prefix dist/libs/agentj-design-system-components
+
       - name: Show publish candidate
         env:
           PKG_NAME: "${{ steps.pkg.outputs.name }}"
